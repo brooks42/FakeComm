@@ -2,7 +2,6 @@ package examples;
 
 import com.sun.istack.internal.logging.Logger;
 import fakenetworking.FakePacket;
-import fakenetworking.FakeTCP;
 import fakenetworking.FakeUDP;
 import fakenetworking.PacketTarget;
 import java.util.logging.Level;
