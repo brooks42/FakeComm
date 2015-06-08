@@ -1,10 +1,10 @@
 package examples;
 
-import com.sun.istack.internal.logging.Logger;
 import fakenetworking.FakePacket;
 import fakenetworking.FakeUDP;
 import fakenetworking.PacketTarget;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -31,8 +31,8 @@ public class FakeNetworkingTest {
      *
      */
     public void printResults() {
-        Logger.getLogger(FakeNetworkingTest.class).log(Level.INFO, "Successful UDP packets: ({0} / {1})", new Object[]{successfulUDPPackets, UDP_TEST_NUM});
-        Logger.getLogger(FakeNetworkingTest.class).log(Level.INFO, "This concludes our test.");
+        Logger.getGlobal().log(Level.INFO, "Successful UDP packets: ({0} / {1})", new Object[]{successfulUDPPackets, UDP_TEST_NUM});
+        Logger.getGlobal().log(Level.INFO, "This concludes our test.");
     }
 
     /**
